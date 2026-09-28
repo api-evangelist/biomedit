@@ -1,23 +1,66 @@
 aid: biomedit
+
 name: BiomEdit
-description: 'BiomEdit is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://biomedit.com/wp-content/uploads/2024/01/thumbnail_image003.png
+
+description: 'BiomEdit is an innovation company that discovers, designs, and develops novel microbiome‑derived products to address unmet needs in animal health. Leveraging the animal’s own microbial ecosystem, BiomEdit creates solutions where none exist, focusing on improving animal health through microbiome science and advanced product development pipelines.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biomedit/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Animal Health
+- Microbiome
+- Biotechnology
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/biomedit-hosts.yml
+- type: Vendors
+  url: vendors/biomedit-vendors.yml
+- type: TermsOfService
+  url: https://biomedit.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://biomedit.com/privacy-policy
+- type: DomainSecurity
+  url: security/biomedit-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://biomedit.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: OpenAPI spec not found at standard endpoints on api.biomedit.com
+  evidence:
+    - url: https://api.biomedit.com/openapi.json
+      status: timeout
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
